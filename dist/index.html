@@ -19,6 +19,48 @@
         -ms-user-select: none;     /* IE10+/Edge */
         user-select: none;         /* Standard */
       }
+
+      /* --- Premium Minimalist Scrollbar --- */
+      
+      /* WebKit Browsers (Chrome, Safari, Edge) */
+      ::-webkit-scrollbar {
+        width: 6px;  /* Vertical scrollbar width */
+        height: 6px; /* Horizontal scrollbar height */
+      }
+
+      ::-webkit-scrollbar-track {
+        background: transparent;
+        margin-block: 4px; /* Slight gap at top/bottom */
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: rgba(203, 213, 225, 0.6); /* Slate-300 with opacity for glass effect */
+        border-radius: 100vh; /* Pill shape */
+        transition: background 0.3s ease;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: rgba(148, 163, 184, 0.8); /* Slate-400 */
+      }
+
+      /* Dark Mode Overrides */
+      .dark ::-webkit-scrollbar-thumb {
+        background: rgba(51, 65, 85, 0.6); /* Slate-700 with opacity */
+      }
+
+      .dark ::-webkit-scrollbar-thumb:hover {
+        background: rgba(71, 85, 105, 0.9); /* Slate-600 */
+      }
+
+      /* Firefox Support */
+      html {
+        scrollbar-width: thin;
+        scrollbar-color: rgba(203, 213, 225, 0.6) transparent;
+      }
+
+      html.dark {
+        scrollbar-color: rgba(51, 65, 85, 0.6) transparent;
+      }
     </style>
 
 <link rel="stylesheet" href="/index.css">
@@ -31,7 +73,7 @@
   }
 }
 </script>
-  <script type="module" crossorigin src="/assets/index-BIL7SFc2.js"></script>
+  <script type="module" crossorigin src="/assets/index-CdpufX3D.js"></script>
 </head>
   <body>
     <div id="root"></div>
